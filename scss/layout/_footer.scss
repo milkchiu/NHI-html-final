@@ -1,7 +1,7 @@
 //footer---------------------------------------------------
 .footer {
     background: $bg-footer;
-    padding: 1.25rem;
+    padding: 1.25rem 0;
     .footer-link {
         a {
             color: $white;
@@ -12,8 +12,6 @@
         }
     }
     p {
-        font-size: .875rem;
         color: $gray-300;
-        margin: .25rem 0;
     }
 }

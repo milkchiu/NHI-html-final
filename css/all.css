@@ -11194,7 +11194,7 @@ body.header-fixed header {
 
 .footer {
   background: #666666;
-  padding: 1.25rem;
+  padding: 1.25rem 0;
 }
 
 .footer .footer-link a {
@@ -11207,9 +11207,7 @@ body.header-fixed header {
 }
 
 .footer p {
-  font-size: .875rem;
   color: #DDDDDD;
-  margin: .25rem 0;
 }
 
 .hvr-grow, .project-item img {
@@ -11595,7 +11593,7 @@ body.header-fixed header {
 
 .block-list-link {
   display: block;
-  padding: .5rem 1rem;
+  padding: .75rem 2.25rem .75rem 1rem;
   color: inherit;
 }
 
