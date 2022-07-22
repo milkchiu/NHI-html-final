@@ -1,0 +1,19 @@
+//footer---------------------------------------------------
+.footer {
+    background: $bg-footer;
+    padding: 1.25rem;
+    .footer-link {
+        a {
+            color: $white;
+            padding: 0 .25rem;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    p {
+        font-size: .875rem;
+        color: $gray-300;
+        margin: .25rem 0;
+    }
+}

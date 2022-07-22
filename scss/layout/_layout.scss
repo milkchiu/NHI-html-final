@@ -1,0 +1,63 @@
+//主要區塊---------------------------------------------------
+.wrap {
+    position: relative;
+    min-height: 100vh;
+}
+.section {
+    padding: 3.5rem 0;
+    @include media-breakpoint-down(md) {
+        padding: 1.875rem 0;
+    }
+}
+//主視覺內容
+.master-vision {
+    min-height: 580px;
+    background-image:url(../images/visual_dec01.png),url(../images/visual_dec02.png),url(../images/vision_bg.jpg); //這是高階瀏覽器的css多重背景，第一個最上面
+    background-repeat: no-repeat;
+    background-position: left top,right center,center;
+    background-size: auto,auto,cover;
+    background-attachment: local, local, fixed;
+    @include media-breakpoint-down(lg) {
+        background-image:url(../images/visual_dec01_m.png),url(../images/visual_dec02_m.png),url(../images/vision_bg_m.jpg);
+        background-position: left -30px,right bottom,center;
+        background-size: auto,40%,cover;
+    }
+    @include media-breakpoint-down(sm) {
+        min-height: 400px;
+        background-size: 50%,50%,cover;
+    }
+}
+.main-title {
+    font-size: 2.25rem;
+    text-shadow: 0px 1px 2px #FFFFFF;
+    @include media-breakpoint-down(md) {
+        font-size: 1.5rem;
+    }
+}
+.master-vision-content {
+    background: rgba(255,255,255,.75);
+    padding: 3rem 1rem;
+    @include media-breakpoint-down(md) {
+        padding: 1.5rem .5rem;
+    }
+}
+.main-bg {
+    background-image: url('../images/bg_main.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+}
+.inPage {
+    margin-top: -1.875rem;
+    padding-bottom: 3.125rem;
+    @include media-breakpoint-down(md) {
+        margin-top: 0;
+        padding-bottom: 1.25rem;
+    }
+}
+.con-block { 
+    position: relative;
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow;
+}

@@ -1,0 +1,48 @@
+
+// Customize variables
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+
+// Bootstrap start
+// Bootstrap Require
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Bootstrap 元件
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/grid";
+//@import "bootstrap/containers";
+@import "bootstrap/alert";
+@import "bootstrap/card";
+@import "bootstrap/carousel";
+@import "bootstrap/forms";
+@import "bootstrap/input-group";
+@import "bootstrap/badge";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/pagination";
+@import "bootstrap/tables";
+//@import "bootstrap/accordion";
+
+//@import "bootstrap/helpers";
+
+// bootstrap utilites
+@import "bootstrap/utilities";
+// Bootstrap end
+
+// Customize
+@import "common";
+
+@import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
+
+@import "module/module";
+
+@import "page/index";
