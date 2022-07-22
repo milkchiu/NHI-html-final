@@ -342,7 +342,7 @@
 .block-list {
     &-link {
         display: block;
-        padding: .5rem 1rem;
+        padding: .75rem 2.25rem .75rem 1rem;
         color: inherit;
         &:hover {
             background: darken($white,5%);
