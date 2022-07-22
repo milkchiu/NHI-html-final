@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>利用全民健保資料庫之國際期刊論文</title>
+
+    <!--bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- 輪播樣式-Owl Stylesheets -->
+    <link href="css/owl/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl/owl.theme.default.min.css" rel="stylesheet">
+
+    <!--style-->
+    <link href="css/all.css" rel="stylesheet">
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header id="topnav" class="header shadow" data-aos="fade-down">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="header-logo mr-md-auto"><img src="images/header_logo.svg"></a>
+            <a class="header-navIcon" onclick="toggle('#navWrap')">
+                <i class="bi bi-list"></i>
+            </a>
+        </div>
+    </header>
+    <div class="wrap main-bg">
+        <div class="section master-vision d-flex align-items-center" data-aos="fade-down"  data-aos-delay="200" data-aos-duration="600">
+            <div class="container">
+                <div class="master-vision-content">
+                    <h1 class="main-title text-blueDark text-center font-weight-bold mb-md-4 mb-3">利用全民健保資料庫之國際期刊論文</h1>
+                    <div class="index-search tabs-style01">
+                        <div class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                            <a class="col-md-3 col-5 nav-item nav-link active" id="search-type01-tab" data-toggle="pill" href="#search-type01" role="tab" aria-controls="search-type01" aria-selected="true">
+                                <span>一般查詢</span>
+                            </a>
+                            <a class="col-md-3 col-5 nav-item nav-link" id="search-type02-tab" data-toggle="pill" href="#search-type02" role="tab" aria-controls="search-type02" aria-selected="false">
+                                <span>進階查詢</span>
+                            </a>
+                        </div>
+                        <div class="tab-content p-lg-3 p-2" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="search-type01" role="tabpanel" aria-labelledby="search-type01-tab">
+                                <div class="input-group">
+                                    <select id="" class="form-control col-3">
+                                        <option selected>All</option>
+                                        <option>Author</option>
+                                        <option>Title</option>
+                                        <option>Journals</option>
+                                        <option>Keywords</option>
+                                        <option>publication Date</option>
+                                        <option>Subjects</option>
+                                    </select>
+                                    <input type="search" class="form-control" placeholder="搜索出版物、文章、關鍵字等等">
+                                    <div class="input-group-append">
+                                        <button id="" type="submit" class="btn btn-primary">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="search-type02" role="tabpanel" aria-labelledby="search-type02-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form>
+                                            <div class="form-group form-row">
+                                                <div class="col-md-8 mb-1 mb-md-0">
+                                                    <input type="text" class="form-control" placeholder="搜索出版物、文章、關鍵字等等">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select id="" class="form-control">
+                                                        <option selected>All</option>
+                                                        <option>Author</option>
+                                                        <option>Title</option>
+                                                        <option>Journals</option>
+                                                        <option>Keywords</option>
+                                                        <option>publication Date</option>
+                                                        <option>Subjects</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-row">
+                                                <div class="col-md-8 mb-1 mb-md-0">
+                                                    <div class="input-group">
+                                                        <select id="" class="form-control col-3">
+                                                            <option selected="">AND</option>
+                                                            <option>OR</option>
+                                                            <option>NOT</option>
+                                                        </select>
+                                                        <input type="text" class="form-control" placeholder="搜索出版物、文章、關鍵字等等">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select id="" class="form-control">
+                                                        <option selected>All</option>
+                                                        <option>Author</option>
+                                                        <option>Title</option>
+                                                        <option>Journals</option>
+                                                        <option>Keywords</option>
+                                                        <option>publication Date</option>
+                                                        <option>Subjects</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-row">
+                                                <div class="col-md-8 mb-1 mb-md-0">
+                                                    <div class="input-group">
+                                                        <select id="" class="form-control col-3">
+                                                            <option selected="">AND</option>
+                                                            <option>OR</option>
+                                                            <option>NOT</option>
+                                                        </select>
+                                                        <input type="text" class="form-control" placeholder="搜索出版物、文章、關鍵字等等">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select id="" class="form-control">
+                                                        <option selected>All</option>
+                                                        <option>Author</option>
+                                                        <option>Title</option>
+                                                        <option>Journals</option>
+                                                        <option>Keywords</option>
+                                                        <option>publication Date</option>
+                                                        <option>Subjects</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col d-flex justify-content-end align-items-center mt-2">
+                                                    <a href="#" class="mr-2">
+                                                        <i class="bi bi-plus-circle-fill"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="bi bi-dash-circle-fill"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <h4 class="subtitle small mb-3">進階篩選條件</h4>
+                                        <form>
+                                            <!-- <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-row">
+                                                        <label for="" class="col-sm-4 col-form-label">語言</label>
+                                                        <div class="col-sm-8">
+                                                            <select id="" class="form-control">
+                                                                <option selected>全部</option>
+                                                                <option>中文</option>
+                                                                <option>英文</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-row">
+                                                        <label for="" class="col-sm-4 col-form-label">資料類型</label>
+                                                        <div class="col-sm-8">
+                                                            <select id="" class="form-control">
+                                                                <option selected>全部</option>
+                                                                <option>學術性</option>
+                                                                <option>一般性</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <div class="form-group form-row">
+                                                <label for="" class="col-sm-4 col-form-label">出版日期</label>
+                                                <!-- <div class="col-sm-3 mb-1 mb-md-0">
+                                                    <select id="" class="form-control">
+                                                        <option selected>All</option>
+                                                        <option>Custom scope</option>
+                                                    </select>
+                                                </div> -->
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <input type="date" class="form-control">
+                                                        <div class="input-group-prepend">
+                                                            <label class="input-group-text" for="">~</label>
+                                                        </div>
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-row">
+                                                <label for="" class="col-sm-4 col-form-label">Impact Factor</label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="0">
+                                                        <div class="input-group-prepend">
+                                                            <label class="input-group-text" for="">~</label>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="99">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center mt-4 mb-3 mb-md-0">
+                                                <button class="btn btn-primary w-120px" type="button">查詢</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!-- <h4 class="subtitle small mb-3">查詢提示</h4> -->
+                                        <div class="note-block fs-14 px-3 py-2">
+                                            <p>
+                                                運算符號(AND、OR、NOT)
+                                                您可以使用運算符號進行多重條件查詢。
+                                                要搜索短語，請將術語放在引號中。
+                                                例一：water AND food (搜索同時包含water與food的文章) 
+                                                例二：“spinal cord” (術語搜索時須用引號標註)
+
+                                            </p>
+                                                
+                                            <p><b class="fs-16">通配符號(?、*)</b><br>
+                                                您可以在搜索欄中使用通配符號 ? 來表示單個字符，而 * 則表示零個或多個字符，但是通配符號不能用於搜索字符開頭與引號內的字符，如 *tension 和 “tobacco smok*”。
+                                                例一：wom?n (搜索有woman或women的文章）
+                                                例二：plant* (搜索有plant, plants, planting的文章)
+
+                                            </p>
+                                                
+                                            <p class="mb-0"><b class="fs-16">作者搜索</b><br>
+                                                作者姓名可能以全名或首字母出現。將作者姓名放在引號中以查找特定名稱及其變體。
+                                                例一：“John Smith” (搜索 John Smith、John K Smith 和 John Colby-Smith 的文章)
+                                                例二：“J Smith” (搜索 J Smith、JR Smith、John Smith 和Julie Smith 的文章)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="navWrap" class="header-nav navWrap" data-aos="fade-down"  data-aos-delay="200" data-aos-duration="800">
+            <div class="mask" onclick="toggle('#navWrap')"></div>
+            <div class="cont">
+                <div class="nav-box container">
+                    <ul class="nav justify-content-center">
+                        <!--menu-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">全部<span class="ml-1">(7,517)</span></a>
+                            <ul class="animated slideIn">
+                                <li class="list-arrow"><a href="#">Chinese</a></li>
+                                <li class="list-arrow"><a href="#">English</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SCIE<span class="ml-1">(6,424)</span></a>
+                            <ul class="animated slideIn">
+                                <li class="list-arrow"><a href="#">Chinese</a></li>
+                                <li class="list-arrow"><a href="#">English</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SSCI<span class="ml-1">(1,639)</span></a>
+                            <ul class="animated slideIn">
+                                <li class="list-arrow"><a href="#">Chinese</a></li>
+                                <li class="list-arrow"><a href="#">English</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">其他<span class="ml-1">(989)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">本月新增<span class="ml-1">(120)</span></a>
+                            <ul class="animated slideIn">
+                                <li class="list-arrow"><a href="#">Chinese</a></li>
+                                <li class="list-arrow"><a href="#">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--/menu-->
+            </div>
+        </nav>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-duration="400">
+                        <div class="con-block p-3 p-md-4">
+                            <h3 class="subtitle big mb-4">全部論文分類<span></span></h3>
+                            <div class="p-2">
+                                <img class="img-fluid" src="images/analyze01.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+                        <div class="con-block p-3 p-md-4">
+                            <h3 class="subtitle big mb-4">本月新增<span></span></h3>
+                            <div class="p-2">
+                                <img class="img-fluid" src="images/analyze02.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-section">
+            <div class="container">
+                <h2 class="headline-title ic-headline01 mb-3 mb-md-5" data-aos="fade-right">熱門檢索<span></span></h2>
+                <div id="project-rd01" class="owl-carousel owl-theme mb-5">
+                    <div class="rd-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600">
+                        <a class="project-item con-block h-100" href="#">
+                            <div class="project-photo p-2">
+                                <div class="imgfit imgfit-3x2 rounded-3 mt-n3">
+                                    <img src="images/product/img_pd01.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="project-body flex-fill">
+                                <h3 class="project-title fs-16 mb-0 px-2 pt-2 pb-3">Bilateral oophorectomy and the risk of hepatocellular carcinoma in women with hepatitis C: A population-based study</h3>
+                                <p class="project-text fs-14 text-secondary px-2 py-3 mt-auto mb-0">
+                                    <span class="text-truncate-2">Chen CY, Wang TY, Chen WM, Chen KH, Yang YH, Chen PC, Chen VCChen CY, Wang TY, Chen WM, Chen KH, Yang YH, Chen PC, Chen VC</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rd-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600">
+                        <a class="project-item con-block h-100" href="#">
+                            <div class="project-photo p-2">
+                                <div class="imgfit imgfit-3x2 rounded-3 mt-n3">
+                                    <img src="images/product/img_pd02.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="project-body flex-fill">
+                                <h3 class="project-title fs-16 mb-0 px-2 pt-2 pb-3">Association between chronic kidney disease and the most common corneal ectasia disease (keratoconus): a nationwide cohort study</h3>
+                                <p class="project-text fs-14 text-secondary p-2 py-3 mt-auto mb-0">
+                                    <span class="text-truncate-2">Jan RL, Weng SF, Wang JJ, Chang YS.</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rd-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600">
+                        <a class="project-item con-block h-100" href="#">
+                            <div class="project-photo p-2">
+                                <div class="imgfit imgfit-3x2 rounded-3 mt-n3">
+                                    <img src="images/product/img_pd03.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="project-body flex-fill">
+                                <h3 class="project-title fs-16 mb-0 px-2 pt-2 pb-3">Use of gastric acid-suppressive agents increases the risk of dementia in patients with upper gastrointestinal disease: A population-based retrospective cohort study</h3>
+                                <p class="project-text fs-14 text-secondary p-2 py-3 mt-auto mb-0">
+                                    <span class="text-truncate-2">Lin HC, Huang KT, Lin HL, Uang YS, Ho Y, Keller JJ, Wang LH.</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rd-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600">
+                        <a class="project-item con-block h-100" href="#">
+                            <div class="project-photo p-2">
+                                <div class="imgfit imgfit-3x2 rounded-3 mt-n3">
+                                    <img src="images/product/img_pd04.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="project-body flex-fill">
+                                <h3 class="project-title fs-16 mb-0 px-2 pt-2 pb-3">Bilateral oophorectomy and the risk of hepatocellular carcinoma in women with hepatitis C: A population-based study</h3>
+                                <p class="project-text fs-14 text-secondary p-2 py-3 mt-auto mb-0">
+                                    <span class="text-truncate-2">Chen CY, Wang TY, Chen WM, Chen KH, Yang YH, Chen PC, Chen VCChen CY, Wang TY, Chen WM, Chen KH, Yang YH, Chen PC, Chen VC</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h2 class="headline-title ic-headline02 mb-3 mb-md-5" data-aos="fade-right">推薦文章<span></span></h2>
+                <div id="project-rd02" class="owl-carousel owl-theme">
+                    <div class="rd-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600">
+                        <a class="project-item con-block h-100" href="#">
+                            <div class="project-photo p-2">
+                                <div class="imgfit imgfit-3x2 rounded-3 mt-n3">
+                                    <img src="images/product/img_pd05.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="project-body flex-fill">
+                                <h3 class="project-title fs-16 mb-0 px-2 pt-2 pb-3">Bilateral oophorectomy and the risk of hepatocellular carcinoma in women with hepatitis C: A population-based study</h3>
+                                <p class="project-text fs-14 text-secondary px-2 py-3 mt-auto mb-0">
+                                    <span class="text-truncate-2">Chen CY, Wang TY, Chen WM, Chen KH, Yang YH, Chen PC, Chen VCChen CY, Wang TY, Chen WM, Chen KH, Yang YH, Chen PC, Chen VC</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rd-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600">
+                        <a class="project-item con-block h-100" href="#">
+                            <div class="project-photo p-2">
+                                <div class="imgfit imgfit-3x2 rounded-3 mt-n3">
+                                    <img src="images/product/img_pd06.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="project-body flex-fill">
+                                <h3 class="project-title fs-16 mb-0 px-2 pt-2 pb-3">Association between chronic kidney disease and the most common corneal ectasia disease (keratoconus): a nationwide cohort study</h3>
+                                <p class="project-text fs-14 text-secondary p-2 py-3 mt-auto mb-0">
+                                    <span class="text-truncate-2">Jan RL, Weng SF, Wang JJ, Chang YS.</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rd-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600">
+                        <a class="project-item con-block h-100" href="#">
+                            <div class="project-photo p-2">
+                                <div class="imgfit imgfit-3x2 rounded-3 mt-n3">
+                                    <img src="images/product/img_pd07.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="project-body flex-fill">
+                                <h3 class="project-title fs-16 mb-0 px-2 pt-2 pb-3">Use of gastric acid-suppressive agents increases the risk of dementia in patients with upper gastrointestinal disease: A population-based retrospective cohort study</h3>
+                                <p class="project-text fs-14 text-secondary p-2 py-3 mt-auto mb-0">
+                                    <span class="text-truncate-2">Lin HC, Huang KT, Lin HL, Uang YS, Ho Y, Keller JJ, Wang LH.</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rd-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600">
+                        <a class="project-item con-block h-100" href="#">
+                            <div class="project-photo p-2">
+                                <div class="imgfit imgfit-3x2 rounded-3 mt-n3">
+                                    <img src="images/product/img_pd08.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="project-body flex-fill">
+                                <h3 class="project-title fs-16 mb-0 px-2 pt-2 pb-3">Bilateral oophorectomy and the risk of hepatocellular carcinoma in women with hepatitis C: A population-based study</h3>
+                                <p class="project-text fs-14 text-secondary p-2 py-3 mt-auto mb-0">
+                                    <span class="text-truncate-2">Chen CY, Wang TY, Chen WM, Chen KH, Yang YH, Chen PC, Chen VCChen CY, Wang TY, Chen WM, Chen KH, Yang YH, Chen PC, Chen VC</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-duration="600">
+                        <h2 class="subtitle big mb-4">JCR自然科學版本 Science Edition<span></span></h2>
+                        <div class="con-block overflow-hidden py-2">
+                            <ul class="list-unstyled mb-0">
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Medicine, General & Internal (1072)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Multidisciplinary Sciences (709)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Cardiac & Cardiovascular Systems (239)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Endocrinology & Metabolism (201)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Environmental Sciences; Public (197)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Environmental & Occupational Health (197)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Oncology(190)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Psychiatry(168)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Public, Environmental & Occupational Health (159)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Urology & Nephrology (157)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Gastroenterology & Hepatology (140)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Pharmacology & Pharmacy (140)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Rheumatology (139)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Dermatology (122)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Ophthalmology (112)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Psychiatry(103)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Clinical Neurology(102)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Neurosciences(99)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Health Care Sciences & Services; Health Policy & Services (91)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Integrative & Complementary Medicine (86)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Pediatrics (72)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Health Care Sciences & Services (67)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Obstetrics & Gynecology (66)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Public, Environmental & Occupational Health; Pharmacology & Pharmacy (54)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Respiratory System (54)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                        <h2 class="subtitle big mb-4">JCR社會科學版本 Social Sciences Edition<span></span></h2>
+                        <div class="con-block overflow-hidden py-2">
+                            <ul class="list-unstyled mb-0">
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Medicine, General & Internal; Medicine, Research & Experimental (53)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Oncology (53)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Cell Biology (53)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Geriatrics & Gerontology (49)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Surgery (45)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Dentistry, Oral Surgery & Medicine (43)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Plant Sciences (39)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Chemistry, Medicinal; Integrative & Complementary Medicine; Pharmacology & Pharmacy (39)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Otorhinolaryngology (38)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Psychology, Clinical (38)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Psychiatry (38)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Medicine, General & Internal (37)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Pharmacology & Pharmacy (37)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Immunology (31)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Infectious Diseases (31)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Microbiology (31)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Cardiac & Cardiovascular Systems (31)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Peripheral Vascular Disease (31)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Infectious Diseases (30)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Clinical Neurology (29)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Peripheral Vascular Disease (29)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Biotechnology & Applied Microbiology; Medicine, Research & Experimental (28)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Hematology (27)</a>
+                                </li>
+                                <li class="block-list-item list-arrow">
+                                    <a href="#" class="block-list-link">Peripheral Vascular Disease (27)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" data-aos="fade-down" data-aos-duration="600" data-aos-anchor-placement="top-bottom"><!--footer-->
+        <div class="container text-center">
+            <p class="footer-link"><a href="#">網站首頁</a>&ensp;|&ensp;<a href="#">聯繫與支持</a>&ensp;|&ensp;<a href="#">條款和條件</a>&ensp;|&ensp;<a href="#">隱私政策</a></p>
+            <p>Copyright © 衛生福利部中央健康保險署 All Rights Reserved.</p>
+        </div>
+    </footer><!--/footer-->
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script>
+        function toggle(id) {
+            $('.open').not($(id)).removeClass('open');
+            $(id).toggleClass('open');
+        }
+    </script>
+
+    <!-- aos -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- owl輪播套件 -->
+    <script src="js/owl/owl.carousel.min.js"></script>
+
+
+    <!-- owl輪播套件/期刊list -->
+    <script>
+        $(document).ready(function() {
+            var owl = $('#project-rd01');
+            owl.owlCarousel({
+                loop: true,
+                nav: false,
+                dots: false,
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 2400,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    420: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 4,
+                    }
+                }
+            });
+            owl.on('mousewheel', '.owl-stage', function(e) {
+                if (e.deltaY > 0) {
+                    owl.trigger('next.owl');
+                } else {
+                    owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            var owl = $('#project-rd02');
+            owl.owlCarousel({
+                loop: true,
+                nav: false,
+                dots: false,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2800,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    420: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 4,
+                    }
+                }
+            });
+            owl.on('mousewheel', '.owl-stage', function(e) {
+                if (e.deltaY > 0) {
+                    owl.trigger('next.owl');
+                } else {
+                    owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+            });
+        })
+    </script>
+
+</body>
+
+</html>
