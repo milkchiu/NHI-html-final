@@ -41,6 +41,7 @@
         padding: 1.5rem .5rem;
     }
 }
+
 .main-bg {
     background-image: url('../images/bg_main.jpg');
     background-repeat: no-repeat;
@@ -61,3 +62,6 @@
     border-radius: $border-radius-lg;
     box-shadow: $box-shadow;
 }
+
+//注意事項---------------------------------------------------
+.note-block {background: rgba($black, .15);}
